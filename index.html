@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/Salario.png">
+</head>
+<body>
+    <div id="calc">Salário Calculadora 💸 </div>
+    <div class="container">
+        <h2>Calculadora</h2>
+        <div class="form-group">
+            <label for="salary">Coloque seu salário:</label>
+            <input type="number" id="salary" name="salary" step="0.01">
+        </div>
+        <div class="form-group">
+            <label for="hours">Quantas horas diárias você trabalha?</label>
+            <input type="number" id="hours" name="hours" step="0.01">
+        </div>
+        <div class="form-group">
+            <label for="currency">Selecione a moeda:</label>
+            <select id="currency" name="currency">
+                <option value="BRL">Real Brasileiro (BRL)</option>
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+                <option value="AUD">Dólar Australiano (AUD)</option>
+                <option value="CHF">Franco Suíço (CHF)</option>
+                <option value="CNY">Yuan Chinês (CNY)</option>
+                <option value="INR">Rúpia Indiana (INR)</option>
+                <option value="NZD">Dólar Neozelandês (NZD)</option>
+                <option value="SGD">Dólar de Cingapura (SGD)</option>
+                <option value="HKD">Dólar de Hong Kong (HKD)</option>
+                <option value="SEK">Coroa Sueca (SEK)</option>
+                <option value="NOK">Coroa Norueguesa (NOK)</option>
+                <option value="DKK">Coroa Dinamarquesa (DKK)</option>
+                <option value="ZAR">Rand Sul-Africano (ZAR)</option>
+                <option value="TRY">Lira Turca (TRY)</option>
+                <option value="RUB">Rublos Russos (RUB)</option>
+                <option value="PLN">Zloty Polonês (PLN)</option>
+                <option value="HUF">Florim Húngaro (HUF)</option>
+                <option value="CZK">Coroa Tcheca (CZK)</option>
+                <option value="ILS">Shekel Israelense (ILS)</option>
+                <option value="MXN">Peso Mexicano (MXN)</option>
+                <option value="IDR">Rupia Indonésia (IDR)</option>
+                <option value="MYR">Ringgit Malaio (MYR)</option>
+                <option value="THB">Baht Tailandês (THB)</option>
+                <option value="PHP">Peso Filipino (PHP)</option>
+                <option value="AED">Dirham dos Emirados Árabes Unidos (AED)</option>
+                <option value="SAR">Riyal Saudita (SAR)</option>
+                <option value="ARS">Peso Argentino (ARS)</option>
+                <option value="CLP">Peso Chileno (CLP)</option>
+                <option value="COP">Peso Colombiano (COP)</option>
+                <option value="PEN">Novo Sol Peruano (PEN)</option>
+                <option value="UAH">Hryvnia Ucraniana (UAH)</option>
+                <option value="BHD">Dinar Bahraini (BHD)</option>
+                <option value="OMR">Rial Omã (OMR)</option>
+                <option value="JOD">Dinar Jordano (JOD)</option>
+                <option value="KWD">Dinar Kuaitiano (KWD)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button onclick="calculateSalary()">Calcular</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+
+    <div class="ticker">
+        <div class="ticker__wrap">
+            <div class="ticker__move" id="exchange-rates"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
